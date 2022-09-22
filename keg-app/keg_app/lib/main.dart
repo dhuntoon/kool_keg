@@ -12,6 +12,7 @@ class Keg {
   String name = "unnamed";
 
   Keg(this.ID);
+  Keg.testing(this.ID, this.name, this.connection, this.temp, this.vol);
 
   @override
   String toString() {
@@ -28,9 +29,9 @@ class KegList extends StatefulWidget {
 
 class _KegListState extends State<KegList> {
   List<Keg> kegs = [
-    Keg(123456789.toString()),
-    Keg(123456790.toString()),
-    Keg(123456791.toString())
+    Keg.testing("237423984", "first beverage name goes here", true, 12, 34),
+    Keg.testing("847585473", "the 2nd beverage is here", true, 31, 12),
+    Keg("123456789")
   ];
 
   @override
@@ -44,7 +45,7 @@ class _KegListState extends State<KegList> {
           itemBuilder: (context, i) {
             return Card(
                 child: ListTile(
-              title: Text("${kegs[i].name}"),
+              title: Text(kegs[i].name),
               subtitle: Text("ID: ${kegs[i].ID}"),
               trailing: Icon(
                 kegs[i].connection == true ? Icons.check_circle : Icons.error,
