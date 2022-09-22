@@ -1,1 +1,37 @@
-# kool_keg
+# Kool Keg
+Purdue University > ECE Senior Design (ECE 49022) > Lab Section 5 > Team 51
+
+This repository holds relevant files for Team 51 (_Kool Keg_) in ECE Senior Design, including hardware schematics, PCB layouts, and mobile application software.
+
+## Table of Contents
+
+kool_keg (repository home directory)
+* Circuit Design/
+  * system and subsystem hardware schematics and layouts
+* keg-app/ 
+  * mobile application working directory
+* README.md
+  * this file
+
+
+## Operating the Mobile App
+
+Updated Sep 22, 2022.
+
+The mobile application will be deployed onto devices supporting the iOS and Android platforms. Execution will automatically begin when the application is launched on the aforementioned device.
+
+To build or prototype with the program on a local machine, you must install the following dependencies.
+
+Dependencies:
+* Flutter (Flutter SDK 3.3.1)
+* Android toolchain (Android SDK version 33.0.0)
+* Xcode (Xcode 14.0) - for building and emulating iOS applications
+* Android Studio (version 2021.2) - for emulating Android applications
+
+## Credits
+
+Contributors to this repository:
+* Cole Kniffen 
+* Dylan Huntoon 
+* Mitchell Morris 
+* Jared Nutt
