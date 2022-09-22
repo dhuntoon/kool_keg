@@ -324,6 +324,10 @@
     [
       "5174c01b-1620-419c-8a1e-138e3ddf685f",
       "Power Subsystem"
+    ],
+    [
+      "2e8d0db8-fadc-4b32-a04c-e76fcdae81d9",
+      "MCU"
     ]
   ],
   "text_variables": {}
