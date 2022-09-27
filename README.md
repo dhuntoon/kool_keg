@@ -6,17 +6,24 @@ This repository holds relevant files for Team 51 (_Kool Keg_) in ECE Senior Desi
 ## Table of Contents
 
 kool_keg (repository home directory)
-* Circuit Design/
-  * system and subsystem hardware schematics and layouts
-* keg-app/ 
+* `/Circuit Design/...`
+  * system hardware schematics
+  * circuit layouts for PCB Design
+  
+* `/Software Design/...`
+  * software flow diagrams
+  * sub-system block diagram(s)
+
+* `/keg-app/...`
   * mobile application working directory
-* README.md
-  * this file
+ 
+* `/README.md`
+  * this markdown file
 
 
 ## Operating the Mobile App
 
-Updated Sep 22, 2022.
+Updated Sep 26, 2022.
 
 The mobile application will be deployed onto devices supporting the iOS and Android platforms. Execution will automatically begin when the application is launched on the aforementioned device.
 
