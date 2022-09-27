@@ -23,10 +23,14 @@ kool_keg (repository home directory)
 * `/README.md`
   * this markdown file
 
+## Software Design
+
+![Block Diagram](/Software Design/Software-Block.png)
+
 
 ## Operating the Mobile App
 
-Updated Sep 26, 2022.
+Updated Sep 27, 2022.
 
 The mobile application will be deployed onto devices supporting the iOS and Android platforms. Execution will automatically begin when the application is launched on the aforementioned device.
 
