@@ -16,6 +16,9 @@ kool_keg (repository home directory)
 
 * `/keg-app/...`
   * mobile application working directory
+  * includes the standard SDK with necessary libraries for cross-platform support (see `/android/`, `/ios/`, `/linux/`, etc.)
+  * `/keg_app/lib/...`
+    * sub-directory containing Flutter (Dart) code for the mobile app
  
 * `/README.md`
   * this markdown file
