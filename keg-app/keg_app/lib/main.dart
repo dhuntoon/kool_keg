@@ -1,25 +1,35 @@
 import 'package:flutter/material.dart';
 
+// Main control function, starts the program at launch
 void main() {
   runApp(const MyApp());
 }
 
+// keg object: stores relevant data for each keg
 class Keg {
-  int temp = 0;
-  int vol = 0;
-  bool connection = false;
-  String ID;
-  String name = "unnamed";
+  // Keg Parameters
+  int temp = 0; // current temperature; initialized to zero
+  int vol = 0; // remaining volume; initialized to zero
+  bool connection = false; // keg connection status to cloud service
+  String ID; // keg ID (not modified)
+  String name = "unnamed"; // customizable name; initialized to unnamed
 
+  // primary constructor; used when a new keg is detected
   Keg(this.ID);
+
+  // helper constructor; useful for updating keg while testing code
+  // will be removed in final deployment
   Keg.testing(this.ID, this.name, this.connection, this.temp, this.vol);
 
+  // helper function; useful for displaying keg data
   @override
   String toString() {
     return "Keg [ID=$ID, name=$name, temp=$temp, vol=$vol]";
   }
 }
 
+// Widget used in body of MyApp
+// inherits Stateful Widget object
 class KegList extends StatefulWidget {
   const KegList({super.key});
 
@@ -27,22 +37,30 @@ class KegList extends StatefulWidget {
   State<KegList> createState() => _KegListState();
 }
 
+// State object for KegList
 class _KegListState extends State<KegList> {
+  // keg objects for testing
+  // will be removed in final deployment
   List<Keg> kegs = [
     Keg.testing("237423984", "first beverage name goes here", true, 12, 34),
     Keg.testing("847585473", "the 2nd beverage is here", true, 31, 12),
     Keg("123456789")
   ];
 
+  // Nested widget for KegList; returns scaffold object
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        // title bar at top of screen
         appBar:
             AppBar(title: const Text('Kool Keg - Mobile Monitoring System')),
+
+        // list of objects containing cards
         body: ListView.builder(
           padding: const EdgeInsets.all(8.0),
           itemCount: kegs.length,
           itemBuilder: (context, i) {
+            // card containing listTile with information from keg object
             return Card(
                 child: ListTile(
               title: Text(kegs[i].name),
@@ -60,9 +78,11 @@ class _KegListState extends State<KegList> {
   }
 }
 
+// MyApp object, uses Widget object to build app
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // declare a nested widget object, which returns a MaterialApp
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -70,7 +90,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           appBarTheme: const AppBarTheme(
               backgroundColor: Colors.black, foregroundColor: Colors.white)),
-      home: const KegList(),
+      home: const KegList(), // this Stateful Widget is declared above
     );
   }
 }
