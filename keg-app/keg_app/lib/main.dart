@@ -1,15 +1,26 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:keg_app/httploader.dart';
 
 // Main control function, starts the program at launch
 void main() {
+  foo();
   runApp(const MyApp());
+}
+
+void foo() async {
+  http_loader loader = http_loader();
+  String data = await loader.getKegData();
 }
 
 // keg object: stores relevant data for each keg
 class Keg {
   // Keg Parameters
   int temp = 0; // current temperature; initialized to zero
+  List<int> tempData = [];
   int vol = 0; // remaining volume; initialized to zero
+  List<int> volData = [];
   bool connection = false; // keg connection status to cloud service
   String ID; // keg ID (not modified)
   String name = "unnamed"; // customizable name; initialized to unnamed
@@ -20,6 +31,12 @@ class Keg {
   // helper constructor; useful for updating keg while testing code
   // will be removed in final deployment
   Keg.testing(this.ID, this.name, this.connection, this.temp, this.vol);
+
+  void updateData(int temp, int vol) {
+    tempData.add(temp);
+    this.temp = temp;
+    this.vol = vol;
+  }
 
   // helper function; useful for displaying keg data
   @override
