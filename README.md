@@ -20,6 +20,10 @@ kool_keg (repository home directory)
   * `/keg_app/lib/...`
     * sub-directory containing Flutter (Dart) code for the mobile app
     * **This directory holds code written by Dylan Huntoon for the sub-system**
+  * includes a sub-directory for testing purposes
+  * `/testing/...` 
+    * sub-directory containing Python code and JSON output for testing the mobile app
+    * **This directory holds code written by Dylan Huntoon for the sub-system**
  
 * `/README.md`
   * this markdown file
