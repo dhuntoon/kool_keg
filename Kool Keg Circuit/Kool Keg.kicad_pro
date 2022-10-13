@@ -225,7 +225,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "unannotated": "error",
@@ -239,7 +239,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Circuit Design.kicad_pro",
+    "filename": "Kool Keg.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -318,16 +318,20 @@
   },
   "sheets": [
     [
-      "0595a7f4-78ca-42b9-b659-4d135281acb2",
+      "cd019cda-2f22-40d4-9f71-049cc3c4749d",
       ""
     ],
     [
-      "5174c01b-1620-419c-8a1e-138e3ddf685f",
+      "4be3bbc9-041b-406b-8a57-e104c00209e5",
       "Power Subsystem"
     ],
     [
-      "2e8d0db8-fadc-4b32-a04c-e76fcdae81d9",
-      "MCU"
+      "61b5ec96-7a3b-40f2-a62b-7e3d165d26d5",
+      "Sensor Subsystem"
+    ],
+    [
+      "6af9f972-ac0e-4b60-9032-519a60cdd880",
+      "MCU Subsystem"
     ]
   ],
   "text_variables": {}
