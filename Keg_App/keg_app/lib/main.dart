@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'package:keg_app/keg.dart';
 import 'package:keg_app/keglist.dart';
 import 'package:flutter/material.dart';
-import 'package:keg_app/httploader.dart';
 
 // Main control function, starts the program at launch
 void main() {
@@ -38,10 +37,11 @@ List<Keg> getStaticKegs() {
   return kegs;
 }
 
+// requests data from cloud and stores results in list of kegs
 List<Keg> getKegs() {
-  KegList keglist = KegList();
-  keglist.createDummyKeg();
-  return keglist.getKegs();
+  KegList kegList = KegList();
+  kegList.pullFromHTTP();
+  return kegList.getKegs();
 }
 
 // Widget used in body of MyApp
@@ -64,9 +64,9 @@ class _MyHomePage extends State<MyHomePage> {
     if (staticTest == true) return;
     List<Keg> updatedKegs = await getKegs();
 
-    for (int i = 1; i < updatedKegs.length + 1; i++) {
-      if (i > kegs.length) {
-        kegs[0] = updatedKegs[i];
+    for (int i = 0; i < updatedKegs.length; i++) {
+      if (i >= kegs.length) {
+        kegs[i] = updatedKegs[i];
         continue;
       }
 

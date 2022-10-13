@@ -25,7 +25,7 @@ class KegList {
     return kegs;
   }
 
-  void createDummyKeg() async {
+  void pullFromHTTP() async {
     try {
       for (int i = 1; i < 20; i++) {
         HTTPLoader loader = HTTPLoader(i);
