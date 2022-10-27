@@ -1,4 +1,6 @@
 import 'package:http/http.dart' as http;
+import 'package:keg_app/keg.dart';
+import 'dart:convert';
 
 // https://1cl4lag6ba.execute-api.us-east-2.amazonaws.com/prod/keglist?kegId=1
 class HTTPLoader {

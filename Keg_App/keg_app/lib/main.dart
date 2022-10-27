@@ -9,7 +9,7 @@ void main() {
 }
 
 // Function to generate static (hard-coded) list of kegs
-// This function is called for testing purposes
+// This functv``ion is called for testing purposes
 // i.e., it will NOT be used in the final deployment
 List<Keg> getStaticKegs() {
   List<Map<String, dynamic>> mapList = [];
