@@ -6,24 +6,30 @@ This repository holds relevant files for Team 51 (_Kool Keg_) in ECE Senior Desi
 ## Table of Contents
 
 kool_keg (repository home directory)
+
 * `/Circuit Design/...`
   * system hardware schematics
-  * circuit layouts for PCB Design
-  
-* `/Software Design/...`
-  * software flow diagrams
-  * sub-system block diagram(s)
+ 
+* `/Kool Keg Circuit/...`
+  * PCB Design and related files for system hardware
 
-* `/keg-app/...`
-  * mobile application working directory
-  * includes the standard Flutter SDK and necessary libraries for cross-platform support (see `/keg_app/android/` and `/keg_app/ios/` for example)
-  * `/keg_app/lib/...`
-    * sub-directory containing Flutter (Dart) code for the mobile app
-    * **This directory holds code written by Dylan Huntoon for the sub-system**
-  * includes a sub-directory for testing purposes
-  * `/testing/...` 
-    * sub-directory containing Python code and JSON output for testing the mobile app
-    * **This directory holds code written by Dylan Huntoon for the sub-system**
+* `/Software/...`
+  * Software subsystem working directory
+  * `/aws_backend/...`
+    * sub-directory contianing AWS Lambda code . 
+    * This code is mirrored manually for reference and is **not** executed directly from this source.
+    * **This directory holds code written by Dylan Huntoon for the subsystem**
+  * `/design/`...
+    * sub-directory containing software flow diagrams and subsystem block diagram(s)
+    * **This directory holds figures created by Dylan Huntoon for the subsystem**
+  * `/keg_app/...`
+    * sub-directory containing code related to the mobile app (Flutter SDK and dependencies)
+    * `/lib/...`
+      * sub-directory containing Flutter (Dart) code for the mobile app
+      * **This directory holds code written by Dylan Huntoon for the subsystem**
+  * `/testing_scripts/...` 
+    * sub-directory containing Python code and JSON output for testing the software_subsystem
+    * **This directory holds code written by Dylan Huntoon for the subsystem**
  
 * `/README.md`
   * this markdown file
@@ -33,20 +39,20 @@ kool_keg (repository home directory)
 ### Subsystem Block Diagram
 The following diagram illustrates the components of the software subsystem and related interactions with other subsystems. The color-coding corresponds to the overall system diagram, found in the design documentation.
 
-![Block Diagram](/Software_Design/Software-Block.png)
+![Block Diagram](/Software/design/Software-Block.png)
 
 ### Subsystem Software Architecture
 The following diagram illustrates the software architecture for the system's mobile application. The program is written in Flutter (Dart) and is deployable on iOS and Android platforms. The black circle identifies the program entry point and is triggered when the application launches. 
 
-![Block Diagram](/Software_Design/Software%20Structure.png)
+![Block Diagram](/Software/design/Software%20Structure.png)
 
-For further detail, see the related `Data Management` and `Object Structure` figures in the `Software_Design` subdirectory.
+For further detail, see the related `Data Management` and `Object Structure` figures in the `Software/design/` subdirectory.
 
 ## Operating the Mobile App
 
-Updated Sep 27, 2022.
+Updated Nov 1, 2022.
 
-The mobile application will be deployed onto devices supporting the iOS and Android platforms. Execution will automatically begin when the application is launched on the aforementioned device.
+The mobile application will be deployed onto devices supporting the iOS and Android platforms. Execution will automatically begin when the application is launched on the aforementioned devices.
 
 To build or prototype with the program on a local machine, you must install the following dependencies. To ensure dependencies are installed correctly, reference the flutter documentation (https://docs.flutter.dev/get-started/install).
 
@@ -68,14 +74,14 @@ See the following documentation for Flutter Command Line Tools: https://docs.flu
 
 To build the program:
 ```
-$ cd kool_keg/keg-app/keg_app
+$ cd kool_keg/Software/keg_app
 $ flutter build target
 ```
 where `target` is the targeted platform (ios, android, etc.)
 
 To run the program:
 ```
-$ cd kool_keg/keg-app/keg_app
+$ cd kool_keg/Software/keg_app
 $ flutter run lib/main.dart
 ```
 
