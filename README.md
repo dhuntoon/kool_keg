@@ -19,7 +19,7 @@ kool_keg (repository home directory)
     * sub-directory contianing AWS Lambda code . 
     * This code is mirrored manually for reference and is **not** executed directly from this source.
     * **This directory holds code written by Dylan Huntoon for the subsystem**
-  * `/design/`...
+  * `/figures/`...
     * sub-directory containing software flow diagrams and subsystem block diagram(s)
     * **This directory holds figures created by Dylan Huntoon for the subsystem**
   * `/keg_app/...`
@@ -39,14 +39,14 @@ kool_keg (repository home directory)
 ### Subsystem Block Diagram
 The following diagram illustrates the components of the software subsystem and related interactions with other subsystems. The color-coding corresponds to the overall system diagram, found in the design documentation.
 
-![Block Diagram](/Software/design/Software-Block.png)
+![Block Diagram](/Software/figures/Software-Block.png)
 
 ### Subsystem Software Architecture
 The following diagram illustrates the software architecture for the system's mobile application. The program is written in Flutter (Dart) and is deployable on iOS and Android platforms. The black circle identifies the program entry point and is triggered when the application launches. 
 
-![Block Diagram](/Software/design/Software%20Structure.png)
+![Block Diagram](/Software/figures/Software%20Structure.png)
 
-For further detail, see the related `Data Management` and `Object Structure` figures in the `Software/design/` subdirectory.
+For further detail, see the related figures in the `Software/figures/` subdirectory.
 
 ## Operating the Mobile App
 
