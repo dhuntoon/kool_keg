@@ -1,47 +1,51 @@
-"Source:","/Users/ckniffen/Desktop/Senior Design/kool_keg/Kool Keg Circuit/Kool Keg.kicad_sch"
-"Date:","Tuesday, November 01, 2022 at 11:46:51 AM"
-"Tool:","Eeschema (6.0.7-1)-1"
-"Generator:","/Applications/KiCad/KiCad.app/Contents/SharedSupport/plugins/bom_csv_grouped_by_value_with_fp.py"
-"Component Count:","68"
-"Ref","Qnty","Value","Cmp name","Footprint","Description","Vendor"
-"C1, ","1","100nF","C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","Unpolarized capacitor",""
-"C2, ","1","10uF","C","Capacitor_SMD:CP_Elec_4x5.8","Unpolarized capacitor",""
-"C3, ","1","68nF","C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","Unpolarized capacitor",""
-"C4, C5, C15, C17, ","4","10uF","CAP","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","Capacitor symbol for simulation only",""
-"C6, ","1",".1uF","C","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","Unpolarized capacitor",""
-"C7, ","1","100uF","C","Capacitor_SMD:CP_Elec_6.3x5.8","Unpolarized capacitor",""
-"C8, ","1","56pF","C","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","Unpolarized capacitor",""
-"C9, C10, C22, ","3","22uF","C_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","Unpolarized capacitor, small symbol",""
-"C11, C12, C13, C14, C16, C23, ","6","0.1uF","C_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","Unpolarized capacitor, small symbol",""
-"C18, ","1","2.2uF","C_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","Unpolarized capacitor, small symbol",""
-"C19, C21, ","2",".1uF","C_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","Unpolarized capacitor, small symbol",""
-"C20, ","1","100 nF","C_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","Unpolarized capacitor, small symbol",""
-"D1, D2, D3, ","3","D","D","Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder","Diode",""
-"D4, ","1","1N4148","1N4148","Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal","100V 0.15A standard switching diode, DO-35",""
-"J1, ","1","Conn_01x02_Male","Conn_01x02_Male","Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical","Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",""
-"J2, ","1","Scale Header","Conn_01x04_Male","Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical","Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",""
-"J3, ","1","IR Header","Conn_01x04_Male","Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical","Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",""
-"J4, ","1","Flowmeter Header","Conn_01x03_Male","Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical","Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",""
-"J5, ","1","Prog","Conn_01x06_Male","Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Vertical","Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",""
-"J6, ","1","Solenoid Conn, 01x02_Male","Conn_01x02_Male","Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical","Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",""
-"J7, ","1","Conn_01x02_Female","Conn_01x04_Female","Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical","Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",""
-"L1, ","1","3.3uH","L","Inductor_SMD:L_Bourns_SRN6045TA","Inductor",""
-"Q1, ","1","2N3905","2N3905","Package_TO_SOT_THT:TO-92_Inline","-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92",""
-"Q2, ","1","2N3906","2N3906","Package_TO_SOT_THT:TO-92_Inline","-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92",""
-"R1, ","1","330","R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","Resistor",""
-"R2, ","1","1k","R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","Resistor",""
-"R3, ","1","30.9k","R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","Resistor",""
-"R4, R16, R17, R18, R19, R20, R21, ","7","10k","R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","Resistor",""
-"R5, R6, R7, R8, R9, R10, ","6","22000","R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","Resistor",""
-"R11, R12, ","2","100","R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","Resistor",""
-"R13, ","1","8.2k","R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","Resistor",""
-"R14, ","1","22k","R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","Resistor",""
-"R15, ","1","100k","R_Small","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","Resistor, small symbol",""
-"SW1, SW2, SW3, ","3","SW_MEC_5G","SW_Push","Button_Switch_THT:SW_PUSH-12mm","Push button switch, generic, two pins",""
-"U1, ","1","LM1117-ADJ","LM1117-ADJ","Package_TO_SOT_SMD:SOT-223-3_TabPin2","800mA Low-Dropout Linear Regulator, adjustable output, TO-220/TO-252/TO-263/SOT-223",""
-"U2, ","1","TPS562207","TPS562200","Package_TO_SOT_SMD:SOT-563","2A Synchronous Step-Down Voltage Regulator, Adjustable Output Voltage, 4.5-17V Input Voltage, SOT-23-6",""
-"U3, ","1","74LVC3G14","74LVC3G14","Package_SO:MSOP-8_3x3mm_P0.65mm","Triple NOT Gate Schmitt, Low-Voltage CMOS",""
-"U4, ","1","HX711","HX711_1","Package_SO:SOP-16_3.9x9.9mm_P1.27mm","",""
-"U5, ","1","946-MPQ6610GS-AEC1-P","946-MPQ6610GS-AEC1-P","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","",""
-"U6, ","1","24LC256-I/MS","24LC256","Package_SO:MSOP-8_3x3mm_P0.65mm","I2C Serial EEPROM, 256Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8",""
-"U7, ","1","ESP32-WROOM-32D","ESP32-WROOM-32D","RF_Module:ESP32-WROOM-32","RF Module, ESP32-D0WD SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD",""
+Source:,/Users/ckniffen/Desktop/Senior Design/kool_keg/Kool Keg Circuit/Kool Keg.kicad_sch,,,,,
+Date:,"Tuesday, November 01, 2022 at 11:46:51 AM",,,,,
+Tool:,Eeschema (6.0.7-1)-1,,,,,
+Generator:,/Applications/KiCad/KiCad.app/Contents/SharedSupport/plugins/bom_csv_grouped_by_value_with_fp.py,,,,,
+Component Count:,68,,,,,
+Ref,Qnty,Value,Cmp name,Footprint,Description,Vendor
+"C1, ",1,100nF,C,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,Unpolarized capacitor,
+"C2, ",1,10uF,C,Capacitor_SMD:CP_Elec_4x5.8,Unpolarized capacitor,
+"C3, ",1,68nF,C,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,Unpolarized capacitor,
+"C4, C5, C15, C17, ",4,10uF,CAP,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,Capacitor symbol for simulation only,
+"C6, ",1,.1uF,C,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,Unpolarized capacitor,
+"C7, ",1,100uF,C,Capacitor_SMD:CP_Elec_6.3x5.8,Unpolarized capacitor,
+"C8, ",1,56pF,C,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,Unpolarized capacitor,
+"C9, C10, C22, ",3,22uF,C_Small,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,"Unpolarized capacitor, small symbol",
+"C11, C12, C13, C14, C16, C23, ",6,0.1uF,C_Small,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,"Unpolarized capacitor, small symbol",
+"C18, ",1,2.2uF,C_Small,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,"Unpolarized capacitor, small symbol",
+"C19, C21, ",2,.1uF,C_Small,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,"Unpolarized capacitor, small symbol",
+"C20, ",1,100 nF,C_Small,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,"Unpolarized capacitor, small symbol",
+"D1, D2, D3, ",3,D,D,Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Diode,
+"D4, ",1,1N4148,1N4148,Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal,"100V 0.15A standard switching diode, DO-35",
+"J1, ",1,Conn_01x02_Male,Conn_01x02_Male,Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J2, ",1,Scale Header,Conn_01x04_Male,Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J3, ",1,IR Header,Conn_01x04_Male,Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J4, ",1,Flowmeter Header,Conn_01x03_Male,Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J5, ",1,Prog,Conn_01x06_Male,Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Vertical,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J6, ",1,"Solenoid Conn, 01x02_Male",Conn_01x02_Male,Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J7, ",1,Conn_01x02_Female,Conn_01x04_Female,Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"L1, ",1,3.3uH,L,Inductor_SMD:L_Bourns_SRN6045TA,Inductor,
+"Q1, ",1,2N3905,2N3905,Package_TO_SOT_THT:TO-92_Inline,"-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92",
+"Q2, ",1,2N3906,2N3906,Package_TO_SOT_THT:TO-92_Inline,"-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92",
+"R1, ",1,330,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R2, ",1,1k,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R3, ",1,30.9k,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R4, R16, R17, R18, R19, R20, R21, ",7,10k,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R5, R6, R7, R8, R9, R10, ",6,22000,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R11, R12, ",2,100,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R13, ",1,8.2k,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R14, ",1,22k,R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,Resistor,
+"R15, ",1,100k,R_Small,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,"Resistor, small symbol",
+"SW1, SW2, SW3, ",3,SW_MEC_5G,SW_Push,Button_Switch_THT:SW_PUSH-12mm,"Push button switch, generic, two pins",
+"U1, ",1,LM1117-ADJ,LM1117-ADJ,Package_TO_SOT_SMD:SOT-223-3_TabPin2,"800mA Low-Dropout Linear Regulator, adjustable output, TO-220/TO-252/TO-263/SOT-223",
+"U2, ",1,TPS562207,TPS562200,Package_TO_SOT_SMD:SOT-563,"2A Synchronous Step-Down Voltage Regulator, Adjustable Output Voltage, 4.5-17V Input Voltage, SOT-23-6",
+"U3, ",1,74LVC3G14,74LVC3G14,Package_SO:MSOP-8_3x3mm_P0.65mm,"Triple NOT Gate Schmitt, Low-Voltage CMOS",
+"U4, ",1,HX711,HX711_1,Package_SO:SOP-16_3.9x9.9mm_P1.27mm,,
+"U5, ",1,946-MPQ6610GS-AEC1-P,946-MPQ6610GS-AEC1-P,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,,
+"U6, ",1,24LC256-I/MS,24LC256,Package_SO:MSOP-8_3x3mm_P0.65mm,"I2C Serial EEPROM, 256Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8",
+"U7, ",1,ESP32-WROOM-32D,ESP32-WROOM-32D,RF_Module:ESP32-WROOM-32,"RF Module, ESP32-D0WD SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD",
+,,,,,,
+,,esp prog,,,,
+,,half bridge load cells,,,,
+,,pcb,,,,
