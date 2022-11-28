@@ -9,6 +9,9 @@ kool_keg (repository home directory)
 
 * `/Circuit Design/...`
   * system hardware schematics
+  
+* `/main/...`
+  * Software for MCU
  
 * `/Kool Keg Circuit/...`
   * PCB Design and related files for system hardware
